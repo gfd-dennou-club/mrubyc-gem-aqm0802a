@@ -23,7 +23,7 @@ lcd.write_string("Hello!")
 
 # i2c で直接送信
 lcd.cursor(0, 1)           #カーソル位置を 1 行目の 0 文字目に
-opcode = 0x40.chr
+opcode = 0x40.chr          #表示するときの opcode は 0x40
 i2c.write(0x3e, opcode + "from ESP")
 # <=> lcd.write_string("from ESP")
 sleep(10)
