@@ -4,6 +4,8 @@ mruby/c sources for aqm0802a (LCD module)
 ## device
 https://akizukidenshi.com/catalog/g/gP-06669/
 
+### data sheet
+https://akizukidenshi.com/download/ds/xiamen/AQM0802.pdf
 
 ## sample code
 
