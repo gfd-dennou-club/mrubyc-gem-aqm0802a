@@ -10,8 +10,6 @@ https://akizukidenshi.com/download/ds/xiamen/AQM0802.pdf
 ## sample code
 
 ```ruby
-# coding: utf-8
-
 #I2C 初期化
 i2c = I2C.new(22, 21)
 
