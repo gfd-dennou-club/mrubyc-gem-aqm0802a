@@ -15,7 +15,6 @@ i2c = I2C.new(22, 21)
 
 # LCD 初期化
 lcd = AQM0802A.new(i2c)
-lcd.setup
 
 # LCD に "Hello World" 表示
 lcd.cursor(1, 0)           #カーソル位置を 0 行目の 1 文字目に
