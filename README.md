@@ -8,7 +8,6 @@ https://akizukidenshi.com/catalog/g/gP-06669/
 https://akizukidenshi.com/download/ds/xiamen/AQM0802.pdf
 
 ## sample code
-LCD と RTC を使う場合の例
 
 ```ruby
 #I2C 初期化
@@ -18,8 +17,10 @@ i2c = I2C.new()
 lcd = AQM0802A.new(i2c)
 
 # LCD に "Hello World" 表示
-lcd.cursor(0, 0)
+lcd.clear          #初期化
+str = "ESP"        #変数に値を代入
+lcd.cursor(0, 0)   
 lcd.write_string("Hello?!")
 lcd.cursor(0, 1)
-lcd.write_string("from ESP")
+lcd.write_string("from #{str}") #変数の埋め込み
 ```
