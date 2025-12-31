@@ -20,7 +20,7 @@ lcd = AQM0802A.new(i2c)
 lcd.clear          #初期化
 str = "ESP"        #変数に値を代入
 lcd.cursor(0, 0)   
-lcd.write_string("Hello?!")
+lcd.print("Hello?!")
 lcd.cursor(0, 1)
-lcd.write_string("from #{str}") #変数の埋め込み
+lcd.print("from #{str}") #変数の埋め込み
 ```
